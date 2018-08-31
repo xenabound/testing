@@ -1,6 +1,9 @@
-package crudsimple.entity;
+package ENTITY;
 
-public class Matakuliah {
+import java.util.List;
+
+public abstract class Matakuliah {
+    private String getSemester;
     private String kode_matkul;
     private String nama_matkul;
     private String jumlah_sks;
@@ -42,4 +45,28 @@ public class Matakuliah {
     public void initData() {
     }
 
+    public void getRuang_Kelas() {
+    }
+
+    public String getGetSemester() {
+        return getSemester;
+    }
+
+    public void setGetSemester(String getSemester) {
+        this.getSemester = getSemester;
+    }
+
+    public abstract void saveMatakuliah(Matakuliah matakuliah);
+
+    public abstract void updateMatakuliah(Matakuliah mata_kuliah);
+
+    public abstract List<Matakuliah> getAllMahasiswa();
+
+    public abstract List<Matakuliah> getAllMatakuliah();
+
+    public abstract Matakuliah getMahasiswa();
+
+    public abstract Matakuliah getMatakuliah();
+
+    public abstract void deleteMata_kuliah(String nim);
 }

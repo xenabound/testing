@@ -1,8 +1,8 @@
 package sample;
 
-import crudsederhana.dao.MahasiswaDaoImpl;
-import crudsimple.dao.MahasiswaDao;
-import crudsimple.entity.Mahasiswa;
+import CRUD.MahasiswaDaoImpl;
+import DAO.MahasiswaDao;
+import ENTITY.Mahasiswa;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
@@ -10,7 +10,7 @@ import java.util.Map;
 public class Main {
 
 
-    private static final MahasiswaDaoImpl DatabaseConnection = ;
+    private static final MahasiswaDaoImpl DatabaseConnection =;
 
     public static void main(String[] args) {
         Mahasiswa crud = new Mahasiswa();
@@ -49,5 +49,4 @@ public class Main {
         DatabaseConnection.getInstance().getConnection();
     }
 
-    public static
 }

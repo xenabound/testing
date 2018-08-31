@@ -1,6 +1,6 @@
-package crudsimple.dao;
+package DAO;
 
-import crudsimple.entity.Matakuliah;
+import ENTITY.Matakuliah;
 
 import java.sql.SQLException;
 import java.util.List;

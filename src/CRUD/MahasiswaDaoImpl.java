@@ -1,7 +1,7 @@
-package  crudsederhana.dao;
+package  CRUD;
 
-import crudsimple.dao.MahasiswaDao;
-import crudsimple.entity.Mahasiswa;
+import DAO.MahasiswaDao;
+import ENTITY.Mahasiswa;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 
-public class  MahasiswaDaoImpl implements MahasiswaDao {
+public class  MahasiswaDaoImpl extends Report implements MahasiswaDao {
     private static MahasiswaDaoImpl instance;
     private Connection connection;
 
@@ -36,9 +36,9 @@ public class  MahasiswaDaoImpl implements MahasiswaDao {
     private PreparedStatement preparedStatement;
 
     private MahasiswaDaoImpl() {
+        super();
     }
 
-    @Override
     public void saveMahasiswa(Mahasiswa mahasiswa) {
         try {
             preparedStatement = connection.prepareStatement("insert into mahasiswa values (?,?,?,?)");
@@ -104,6 +104,25 @@ public class  MahasiswaDaoImpl implements MahasiswaDao {
         }
     }
 
+    @Override
+    public void updateMahasiswa(DAO.Report mahasiswa) {
+
+    }
+
+    @Override
+    public void saveMahasiswa(DAO.Report report) throws SQLException {
+
+    }
+
+    @Override
+    public DAO.Report getReport() {
+        return null;
+    }
+
+    @Override
+    public void deleteReport(String nim) {
+
+    }
 }
 
 

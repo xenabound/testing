@@ -1,4 +1,4 @@
-package crudsimple.entity;
+package ENTITY;
 
 public class Mahasiswa {
     private String nim;
@@ -39,5 +39,14 @@ public class Mahasiswa {
     }
 
     public void initData() {
+    }
+
+    public void getkode_matkul() {
+    }
+
+    public void getruang_kelas() {
+    }
+
+    public void getnama_matkul() {
     }
 }
